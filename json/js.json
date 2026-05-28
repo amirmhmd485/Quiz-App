@@ -1,0 +1,162 @@
+﻿[
+    {
+        "Question": "What does JS stand for?",
+        "answer_1": "JavaSoft",
+        "answer_2": "JavaScript",
+        "answer_3": "JustScript",
+        "answer_4": "JScript",
+        "right-answer": "JavaScript"
+    },
+    {
+        "Question": "Which symbol is used for comments in JavaScript?",
+        "answer_1": "<!-- -->",
+        "answer_2": "//",
+        "answer_3": "**",
+        "answer_4": "##",
+        "right-answer": "//"
+    },
+    {
+        "Question": "How do you declare a variable in JavaScript?",
+        "answer_1": "var x = 5;",
+        "answer_2": "variable x = 5;",
+        "answer_3": "let x = 5;",
+        "answer_4": "both var and let",
+        "right-answer": "both var and let"
+    },
+    {
+        "Question": "Which method converts a JSON string to an object?",
+        "answer_1": "JSON.parse()",
+        "answer_2": "JSON.stringify()",
+        "answer_3": "JSON.object()",
+        "answer_4": "JSON.convert()",
+        "right-answer": "JSON.parse()"
+    },
+    {
+        "Question": "What is the output of `typeof null`?",
+        "answer_1": "null",
+        "answer_2": "undefined",
+        "answer_3": "object",
+        "answer_4": "number",
+        "right-answer": "object"
+    },
+    {
+        "Question": "Which keyword creates a constant variable?",
+        "answer_1": "const",
+        "answer_2": "let",
+        "answer_3": "var",
+        "answer_4": "constant",
+        "right-answer": "const"
+    },
+    {
+        "Question": "How do you add an element to the end of an array?",
+        "answer_1": "array.push(value)",
+        "answer_2": "array.pop(value)",
+        "answer_3": "array.unshift(value)",
+        "answer_4": "array.shift(value)",
+        "right-answer": "array.push(value)"
+    },
+    {
+        "Question": "Which function can be used to delay code execution in JavaScript?",
+        "answer_1": "setTimeout()",
+        "answer_2": "wait()",
+        "answer_3": "sleep()",
+        "answer_4": "delay()",
+        "right-answer": "setTimeout()"
+    },
+    {
+        "Question": "What does `===` mean in JavaScript?",
+        "answer_1": "Equal value only",
+        "answer_2": "Equal value and type",
+        "answer_3": "Assignment",
+        "answer_4": "Not equal",
+        "right-answer": "Equal value and type"
+    },
+    {
+        "Question": "Which event occurs when the user clicks on an element?",
+        "answer_1": "onmouseover",
+        "answer_2": "onclick",
+        "answer_3": "onchange",
+        "answer_4": "onload",
+        "right-answer": "onclick"
+    },
+    {
+        "Question": "How do you define a function in JavaScript?",
+        "answer_1": "function myFunction() {}",
+        "answer_2": "def myFunction() {}",
+        "answer_3": "func myFunction() {}",
+        "answer_4": "function: myFunction() {}",
+        "right-answer": "function myFunction() {}"
+    },
+    {
+        "Question": "What is the correct way to write an if statement?",
+        "answer_1": "if x == 5 then",
+        "answer_2": "if (x == 5) {}",
+        "answer_3": "if x = 5 {}",
+        "answer_4": "if x === 5 then",
+        "right-answer": "if (x == 5) {}"
+    },
+    {
+        "Question": "How do you write a JavaScript array?",
+        "answer_1": "var colors = (red, green, blue)",
+        "answer_2": "var colors = [red, green, blue]",
+        "answer_3": "var colors = {red, green, blue}",
+        "answer_4": "var colors = ['red', 'green', 'blue']",
+        "right-answer": "var colors = ['red', 'green', 'blue']"
+    },
+    {
+        "Question": "Which built-in method sorts the elements of an array?",
+        "answer_1": "changeOrder()",
+        "answer_2": "order()",
+        "answer_3": "sort()",
+        "answer_4": "organize()",
+        "right-answer": "sort()"
+    },
+    {
+        "Question": "What does DOM stand for?",
+        "answer_1": "Document Object Model",
+        "answer_2": "Data Object Model",
+        "answer_3": "Display Object Management",
+        "answer_4": "Document Output Method",
+        "right-answer": "Document Object Model"
+    },
+    {
+        "Question": "How can you get the element with id 'demo'?",
+        "answer_1": "document.getElementByName('demo')",
+        "answer_2": "document.getElementById('demo')",
+        "answer_3": "document.querySelectorAll('demo')",
+        "answer_4": "document.find('demo')",
+        "right-answer": "document.getElementById('demo')"
+    },
+    {
+        "Question": "Which method removes the last element from an array?",
+        "answer_1": "pop()",
+        "answer_2": "push()",
+        "answer_3": "shift()",
+        "answer_4": "unshift()",
+        "right-answer": "pop()"
+    },
+    {
+        "Question": "What is the result of `2 + '2'` in JavaScript?",
+        "answer_1": "4",
+        "answer_2": "22",
+        "answer_3": "NaN",
+        "answer_4": "'4'",
+        "right-answer": "22"
+    },
+    {
+        "Question": "Which keyword is used to create a class in JavaScript?",
+        "answer_1": "class",
+        "answer_2": "function",
+        "answer_3": "struct",
+        "answer_4": "object",
+        "right-answer": "class"
+    },
+    {
+        "Question": "How do you write a multi-line comment in JavaScript?",
+        "answer_1": "/* comment */",
+        "answer_2": "// comment //",
+        "answer_3": "<!-- comment -->",
+        "answer_4": "** comment **",
+        "right-answer": "/* comment */"
+    }
+]

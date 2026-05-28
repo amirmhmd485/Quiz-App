@@ -1,0 +1,162 @@
+[
+    {
+        "Question":"WHat HTML Does Mean",
+        "answer_1":"Hyper Tool Mark Language",
+        "answer_2":"Hyper Text Markup Language",
+        "answer_3":"Host Tool Mark Language",
+        "answer_4":"Hyper Text Mark Linear",
+        "right-answer":"Hyper Text Markup Language"
+    },
+    {
+        "Question":"Why We using HTML",
+        "answer_1":"To Build Api",
+        "answer_2":"To Build Structure of Web Page",
+        "answer_3":"To Deal With Server",
+        "answer_4":"To Style Web Page",
+        "right-answer":"To Build Structure of Web Page"
+    },
+    {
+        "Question":"Which tag is used to create a hyperlink?",
+        "answer_1":"<link>",
+        "answer_2":"<a>",
+        "answer_3":"<href>",
+        "answer_4":"<url>",
+        "right-answer":"<a>"
+    },
+    {
+        "Question":"Which HTML tag is used for the largest heading?",
+        "answer_1":"<h1>",
+        "answer_2":"<h6>",
+        "answer_3":"<header>",
+        "answer_4":"<head>",
+        "right-answer":"<h1>"
+    },
+    {
+        "Question":"How do you add a comment in HTML?",
+        "answer_1":"<!-- Comment -->",
+        "answer_2":"// Comment",
+        "answer_3":"/* Comment */",
+        "answer_4":"## Comment",
+        "right-answer":"<!-- Comment -->"
+    },
+    {
+        "Question":"Which tag is used to display an image?",
+        "answer_1":"<img>",
+        "answer_2":"<image>",
+        "answer_3":"<picture>",
+        "answer_4":"<src>",
+        "right-answer":"<img>"
+    },
+    {
+        "Question":"What attribute is used to specify the URL of a link?",
+        "answer_1":"src",
+        "answer_2":"href",
+        "answer_3":"link",
+        "answer_4":"url",
+        "right-answer":"href"
+    },
+    {
+        "Question":"Which tag is used to create an ordered list?",
+        "answer_1":"<ul>",
+        "answer_2":"<ol>",
+        "answer_3":"<li>",
+        "answer_4":"<list>",
+        "right-answer":"<ol>"
+    },
+    {
+        "Question":"Which tag is used to create a table row?",
+        "answer_1":"<td>",
+        "answer_2":"<tr>",
+        "answer_3":"<th>",
+        "answer_4":"<table>",
+        "right-answer":"<tr>"
+    },
+    {
+        "Question":"What does the <form> tag define?",
+        "answer_1":"A block of navigation links",
+        "answer_2":"A form for user input",
+        "answer_3":"A paragraph of text",
+        "answer_4":"A table",
+        "right-answer":"A form for user input"
+    },
+    {
+        "Question":"Which attribute is used to provide alternative text for an image?",
+        "answer_1":"title",
+        "answer_2":"alt",
+        "answer_3":"description",
+        "answer_4":"text",
+        "right-answer":"alt"
+    },
+    {
+        "Question":"Which tag is used to define a paragraph?",
+        "answer_1":"<p>",
+        "answer_2":"<para>",
+        "answer_3":"<text>",
+        "answer_4":"<div>",
+        "right-answer":"<p>"
+    },
+    {
+        "Question":"What is the correct HTML element for inserting a line break?",
+        "answer_1":"<break>",
+        "answer_2":"<br>",
+        "answer_3":"<lb>",
+        "answer_4":"<newline>",
+        "right-answer":"<br>"
+    },
+    {
+        "Question":"How do you create a checkbox in HTML?",
+        "answer_1":"<input type='checkbox'>",
+        "answer_2":"<checkbox>",
+        "answer_3":"<input type='check'>",
+        "answer_4":"<check>",
+        "right-answer":"<input type='checkbox'>"
+    },
+    {
+        "Question":"Which element is used to specify a footer for a document or section?",
+        "answer_1":"<bottom>",
+        "answer_2":"<footer>",
+        "answer_3":"<section>",
+        "answer_4":"<aside>",
+        "right-answer":"<footer>"
+    },
+    {
+        "Question":"Which tag is used to embed a video file in HTML?",
+        "answer_1":"<movie>",
+        "answer_2":"<video>",
+        "answer_3":"<audio>",
+        "answer_4":"<media>",
+        "right-answer":"<video>"
+    },
+    {
+        "Question":"What does the <title> tag define?",
+        "answer_1":"The title of the page shown in the browser tab",
+        "answer_2":"A heading in the body",
+        "answer_3":"A link title",
+        "answer_4":"A section title",
+        "right-answer":"The title of the page shown in the browser tab"
+    },
+    {
+        "Question":"Which tag is used for a numbered list inside HTML?",
+        "answer_1":"<menu>",
+        "answer_2":"<ol>",
+        "answer_3":"<nl>",
+        "answer_4":"<list>",
+        "right-answer":"<ol>"
+    },
+    {
+        "Question":"What is the correct tag for the largest heading in HTML?",
+        "answer_1":"<heading>",
+        "answer_2":"<h1>",
+        "answer_3":"<head>",
+        "answer_4":"<h6>",
+        "right-answer":"<h1>"
+    },
+    {
+        "Question":"Which attribute is used to open a link in a new tab?",
+        "answer_1":"target='_blank'",
+        "answer_2":"open='new'",
+        "answer_3":"tab='new'",
+        "answer_4":"href='_blank'",
+        "right-answer":"target='_blank'"
+    }
+]

@@ -1,0 +1,154 @@
+﻿[
+    {
+        "Question": "What is Bootstrap?",
+        "answer_1": "A JavaScript framework",
+        "answer_2": "A CSS framework",
+        "answer_3": "A database",
+        "answer_4": "A backend server",
+        "right-answer": "A CSS framework"
+    },
+    {
+        "Question": "Which class creates a responsive container that is always 100% width?",
+        "answer_1": ".container-fluid",
+        "answer_2": ".container",
+        "answer_3": ".row",
+        "answer_4": ".col",
+        "right-answer": ".container-fluid"
+    },
+    {
+        "Question": "How do you create a row in Bootstrap?",
+        "answer_1": "<div class=\"row\">",
+        "answer_2": "<div class=\"container\">",
+        "answer_3": "<div class=\"col\">",
+        "answer_4": "<div class=\"grid\">",
+        "right-answer": "<div class=\"row\">"
+    },
+    {
+        "Question": "Which class makes text bold in Bootstrap?",
+        "answer_1": ".font-weight-bold",
+        "answer_2": ".text-bold",
+        "answer_3": ".fw-bold",
+        "answer_4": ".bold",
+        "right-answer": ".fw-bold"
+    },
+    {
+        "Question": "What class adds a primary button style?",
+        "answer_1": ".btn-primary",
+        "answer_2": ".button-primary",
+        "answer_3": ".primary-btn",
+        "answer_4": ".btn-main",
+        "right-answer": ".btn-primary"
+    },
+    {
+        "Question": "How do you create a Bootstrap column that spans 6 of 12 columns?",
+        "answer_1": ".col-6",
+        "answer_2": ".col-md-6",
+        "answer_3": ".col-sm-6",
+        "answer_4": "Any of the above",
+        "right-answer": "Any of the above"
+    },
+    {
+        "Question": "Which class is used to center text?",
+        "answer_1": ".text-center",
+        "answer_2": ".text-align-center",
+        "answer_3": ".center",
+        "answer_4": ".align-center",
+        "right-answer": ".text-center"
+    },
+    {
+        "Question": "What is the default Bootstrap breakpoint for .col-md-*?",
+        "answer_1": "≥ 576px",
+        "answer_2": "≥ 768px",
+        "answer_3": "≥ 992px",
+        "answer_4": "≥ 1200px",
+        "right-answer": "≥ 768px"
+    },
+    {
+        "Question": "Which class adds spacing on all sides?",
+        "answer_1": ".m-3",
+        "answer_2": ".p-3",
+        "answer_3": ".s-3",
+        "answer_4": ".spacing-3",
+        "right-answer": ".m-3"
+    },
+    {
+        "Question": "How do you make an image responsive in Bootstrap?",
+        "answer_1": ".img-fluid",
+        "answer_2": ".responsive-img",
+        "answer_3": ".img-responsive",
+        "answer_4": ".responsive",
+        "right-answer": ".img-fluid"
+    },
+    {
+        "Question": "Which class hides an element on all viewports?",
+        "answer_1": ".d-none",
+        "answer_2": ".hidden",
+        "answer_3": ".invisible",
+        "answer_4": ".display-none",
+        "right-answer": ".d-none"
+    },
+    {
+        "Question": "What class would you use to style a navigation bar?",
+        "answer_1": ".navbar",
+        "answer_2": ".nav",
+        "answer_3": ".navigation",
+        "answer_4": ".menu",
+        "right-answer": ".navbar"
+    },
+    {
+        "Question": "Which class adds a rounded border?",
+        "answer_1": ".rounded",
+        "answer_2": ".border-rounded",
+        "answer_3": ".rounded-border",
+        "answer_4": ".radius",
+        "right-answer": ".rounded"
+    },
+    {
+        "Question": "How do you create a responsive column that spans 4 columns on large screens?",
+        "answer_1": ".col-lg-4",
+        "answer_2": ".col-xl-4",
+        "answer_3": ".col-md-4",
+        "answer_4": ".col-sm-4",
+        "right-answer": ".col-lg-4"
+    },
+    {
+        "Question": "Which class is used to add a dark background to a table?",
+        "answer_1": ".table-dark",
+        "answer_2": ".dark-table",
+        "answer_3": ".table-bg-dark",
+        "answer_4": ".bg-dark-table",
+        "right-answer": ".table-dark"
+    },
+    {
+        "Question": "How do you align items vertically in a flex container?",
+        "answer_1": ".align-items-center",
+        "answer_2": ".align-center",
+        "answer_3": ".vertical-align",
+        "answer_4": ".items-center",
+        "right-answer": ".align-items-center"
+    },
+    {
+        "Question": "What class adds a border to an element?",
+        "answer_1": ".border",
+        "answer_2": ".add-border",
+        "answer_3": ".bordered",
+        "answer_4": ".border-all",
+        "right-answer": ".border"
+    },
+    {
+        "Question": "Which class makes text uppercase?",
+        "answer_1": ".text-uppercase",
+        "answer_2": ".uppercase",
+        "answer_3": ".text-upper",
+        "answer_4": ".upper-case",
+        "right-answer": ".text-uppercase"
+    },
+    {
+        "Question": "How do you apply a secondary button style?",
+        "answer_1": ".btn-secondary",
+        "answer_2": ".btn-alt",
+        "answer_3": ".btn-secondary-style",
+        "answer_4": ".button-secondary",
+        "right-answer": ".btn-secondary"
+    }
+]

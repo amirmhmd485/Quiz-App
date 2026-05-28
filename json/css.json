@@ -1,0 +1,162 @@
+[
+    {
+        "Question": "What does CSS stand for?",
+        "answer_1": "Computer Style Sheets",
+        "answer_2": "Creative Style Sheets",
+        "answer_3": "Cascading Style Sheets",
+        "answer_4": "Colorful Style Sheets",
+        "right-answer": "Cascading Style Sheets"
+    },
+    {
+        "Question": "Which HTML attribute is used to define inline styles?",
+        "answer_1": "style",
+        "answer_2": "class",
+        "answer_3": "styles",
+        "answer_4": "css",
+        "right-answer": "style"
+    },
+    {
+        "Question": "How do you select an element with id 'header' in CSS?",
+        "answer_1": "header",
+        "answer_2": ".header",
+        "answer_3": "#header",
+        "answer_4": "*header",
+        "right-answer": "#header"
+    },
+    {
+        "Question": "What symbol is used to select a class in CSS?",
+        "answer_1": "#",
+        "answer_2": ".",
+        "answer_3": "*",
+        "answer_4": "&",
+        "right-answer": "."
+    },
+    {
+        "Question": "Which property is used to change the text color?",
+        "answer_1": "font-color",
+        "answer_2": "text-color",
+        "answer_3": "color",
+        "answer_4": "font-style",
+        "right-answer": "color"
+    },
+    {
+        "Question": "Which property controls the space inside an element?",
+        "answer_1": "margin",
+        "answer_2": "padding",
+        "answer_3": "border",
+        "answer_4": "spacing",
+        "right-answer": "padding"
+    },
+    {
+        "Question": "Which property controls the space outside an element?",
+        "answer_1": "padding",
+        "answer_2": "margin",
+        "answer_3": "border",
+        "answer_4": "gap",
+        "right-answer": "margin"
+    },
+    {
+        "Question": "How do you make text bold in CSS?",
+        "answer_1": "font-weight: bold;",
+        "answer_2": "text-style: bold;",
+        "answer_3": "font-style: bold;",
+        "answer_4": "text-weight: bold;",
+        "right-answer": "font-weight: bold;"
+    },
+    {
+        "Question": "Which property is used to change the font type of an element?",
+        "answer_1": "font-family",
+        "answer_2": "font-style",
+        "answer_3": "text-font",
+        "answer_4": "font-type",
+        "right-answer": "font-family"
+    },
+    {
+        "Question": "Which property is used to change the background color?",
+        "answer_1": "bgcolor",
+        "answer_2": "background-color",
+        "answer_3": "color-background",
+        "answer_4": "background",
+        "right-answer": "background-color"
+    },
+    {
+        "Question": "What is the default display value of a <div> element?",
+        "answer_1": "inline",
+        "answer_2": "block",
+        "answer_3": "inline-block",
+        "answer_4": "flex",
+        "right-answer": "block"
+    },
+    {
+        "Question": "Which property is used to add rounded corners?",
+        "answer_1": "border-radius",
+        "answer_2": "corner-radius",
+        "answer_3": "border-style",
+        "answer_4": "border-corner",
+        "right-answer": "border-radius"
+    },
+    {
+        "Question": "How do you center an element horizontally with CSS?",
+        "answer_1": "margin: auto;",
+        "answer_2": "text-align: center;",
+        "answer_3": "align: center;",
+        "answer_4": "center: true;",
+        "right-answer": "margin: auto;"
+    },
+    {
+        "Question": "Which property is used to control the opacity of an element?",
+        "answer_1": "opacity",
+        "answer_2": "visibility",
+        "answer_3": "transparency",
+        "answer_4": "filter",
+        "right-answer": "opacity"
+    },
+    {
+        "Question": "How do you select all <p> elements inside a <div>?",
+        "answer_1": "div p",
+        "answer_2": "div > p",
+        "answer_3": ".div p",
+        "answer_4": "#div p",
+        "right-answer": "div p"
+    },
+    {
+        "Question": "Which property is used to change the order of flex items?",
+        "answer_1": "order",
+        "answer_2": "flex-order",
+        "answer_3": "position",
+        "answer_4": "z-index",
+        "right-answer": "order"
+    },
+    {
+        "Question": "What does the 'float' property do?",
+        "answer_1": "Keeps element hidden",
+        "answer_2": "Makes element disappear",
+        "answer_3": "Positions element left or right within its container",
+        "answer_4": "Adds a border",
+        "right-answer": "Positions element left or right within its container"
+    },
+    {
+        "Question": "Which CSS unit is relative to the font size of the root element?",
+        "answer_1": "px",
+        "answer_2": "em",
+        "answer_3": "rem",
+        "answer_4": "%",
+        "right-answer": "rem"
+    },
+    {
+        "Question": "How do you make an element take up 100% of the width of its parent?",
+        "answer_1": "width: 100px;",
+        "answer_2": "width: 100%;",
+        "answer_3": "max-width: full;",
+        "answer_4": "size: full;",
+        "right-answer": "width: 100%;"
+    },
+    {
+        "Question": "Which property is used to set the style of a border?",
+        "answer_1": "border-style",
+        "answer_2": "border-color",
+        "answer_3": "border-width",
+        "answer_4": "border-shape",
+        "right-answer": "border-style"
+    }
+]

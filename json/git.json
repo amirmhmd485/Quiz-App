@@ -1,0 +1,154 @@
+﻿[
+    {
+        "Question": "What does Git track?",
+        "answer_1": "Files only",
+        "answer_2": "Changes to files",
+        "answer_3": "Only branches",
+        "answer_4": "Only commits",
+        "right-answer": "Changes to files"
+    },
+    {
+        "Question": "Which command initializes a new Git repository?",
+        "answer_1": "git init",
+        "answer_2": "git start",
+        "answer_3": "git create",
+        "answer_4": "git new",
+        "right-answer": "git init"
+    },
+    {
+        "Question": "Which command stages files for commit?",
+        "answer_1": "git commit",
+        "answer_2": "git add",
+        "answer_3": "git push",
+        "answer_4": "git stage",
+        "right-answer": "git add"
+    },
+    {
+        "Question": "How do you record staged changes in Git?",
+        "answer_1": "git stage",
+        "answer_2": "git commit",
+        "answer_3": "git push",
+        "answer_4": "git record",
+        "right-answer": "git commit"
+    },
+    {
+        "Question": "Which file tells Git which files to ignore?",
+        "answer_1": "gitignore",
+        "answer_2": ".gitignore",
+        "answer_3": "ignore.txt",
+        "answer_4": "gitignore.txt",
+        "right-answer": ".gitignore"
+    },
+    {
+        "Question": "What does `git status` show?",
+        "answer_1": "Current branch and file status",
+        "answer_2": "Commit history",
+        "answer_3": "Remote branch names",
+        "answer_4": "Staged files only",
+        "right-answer": "Current branch and file status"
+    },
+    {
+        "Question": "How do you see commit history?",
+        "answer_1": "git history",
+        "answer_2": "git log",
+        "answer_3": "git commits",
+        "answer_4": "git show",
+        "right-answer": "git log"
+    },
+    {
+        "Question": "Which command shows changes between commits?",
+        "answer_1": "git diff",
+        "answer_2": "git log",
+        "answer_3": "git status",
+        "answer_4": "git compare",
+        "right-answer": "git diff"
+    },
+    {
+        "Question": "How do you create a new branch?",
+        "answer_1": "git branch branch-name",
+        "answer_2": "git new branch-name",
+        "answer_3": "git checkout branch-name",
+        "answer_4": "git commit branch-name",
+        "right-answer": "git branch branch-name"
+    },
+    {
+        "Question": "Which command switches branches?",
+        "answer_1": "git switch branch-name",
+        "answer_2": "git change branch-name",
+        "answer_3": "git checkout branch-name",
+        "answer_4": "git move branch-name",
+        "right-answer": "Both A and c"
+    },
+    {
+        "Question": "How do you merge a branch into the current branch?",
+        "answer_1": "git merge branch-name",
+        "answer_2": "git pull branch-name",
+        "answer_3": "git rebase branch-name",
+        "answer_4": "git join branch-name",
+        "right-answer": "git merge branch-name"
+    },
+    {
+        "Question": "What does `git pull` do?",
+        "answer_1": "Sends changes to remote",
+        "answer_2": "Fetches and merges changes from remote",
+        "answer_3": "Deletes local branch",
+        "answer_4": "Creates a new branch",
+        "right-answer": "Fetches and merges changes from remote"
+    },
+    {
+        "Question": "What does `git push` do?",
+        "answer_1": "Downloads remote changes",
+        "answer_2": "Uploads local commits to remote",
+        "answer_3": "Creates a new commit",
+        "answer_4": "Deletes remote branch",
+        "right-answer": "Uploads local commits to remote"
+    },
+    {
+        "Question": "How do you clone a repository?",
+        "answer_1": "git fork url",
+        "answer_2": "git clone url",
+        "answer_3": "git copy url",
+        "answer_4": "git download url",
+        "right-answer": "git clone url"
+    },
+    {
+        "Question": "Which area stores changes before committing?",
+        "answer_1": "Working directory",
+        "answer_2": "Staging area",
+        "answer_3": "Remote repository",
+        "answer_4": "Branch",
+        "right-answer": "Staging area"
+    },
+    {
+        "Question": "What does `HEAD` refer to in Git?",
+        "answer_1": "The oldest commit",
+        "answer_2": "The current branch reference",
+        "answer_3": "Remote master branch",
+        "answer_4": "The staging area",
+        "right-answer": "The current branch reference"
+    },
+    {
+        "Question": "How do you remove a file from tracking but keep it locally?",
+        "answer_1": "git rm file.txt",
+        "answer_2": "git rm --cached file.txt",
+        "answer_3": "git delete file.txt",
+        "answer_4": "git untrack file.txt",
+        "right-answer": "git rm --cached file.txt"
+    },
+    {
+        "Question": "Which command shows the current branch name?",
+        "answer_1": "git branch",
+        "answer_2": "git status",
+        "answer_3": "git branch --show-current",
+        "answer_4": "git current",
+        "right-answer": "Both A and c"
+    },
+    {
+        "Question": "How do you undo the last commit but keep changes staged?",
+        "answer_1": "git reset --soft HEAD~1",
+        "answer_2": "git revert HEAD",
+        "answer_3": "git reset --hard HEAD~1",
+        "answer_4": "git checkout HEAD~1",
+        "right-answer": "git reset --soft HEAD~1"
+    }
+]
