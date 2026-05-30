@@ -1,6 +1,7 @@
 // customize offcanvas
 let offCanvas = document.querySelector(".offcanvas");
 let settingIcon = document.querySelector(".offcanvas .icon")
+let closeBtn = document.querySelector(".close")
 let isclose = true;
 
 settingIcon.addEventListener('click' , function(e){
@@ -13,3 +14,9 @@ settingIcon.addEventListener('click' , function(e){
         isclose = true;
     }
 })
+closeBtn.addEventListener("click" , function(e){
+    offCanvas.classList.remove("open");
+    isclose = true;
+})
+
+
