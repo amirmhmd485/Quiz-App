@@ -60,8 +60,6 @@ function afterFetching(){
                 })
             }
         })
-    }).catch(err => {
-        console.error(Error(err));
     })
 }
 function getquestion(data){
