@@ -4,17 +4,17 @@ let settingIcon = document.querySelector(".offcanvas .icon")
 let closeBtn = document.querySelector(".close")
 let isclose = true;
 
-settingIcon.addEventListener('click' , function(e){
-    if(isclose){
+settingIcon.addEventListener('click', function (e) {
+    if (isclose) {
         offCanvas.classList.add("open");
         isclose = false;
     }
-    else{
+    else {
         offCanvas.classList.remove("open");
         isclose = true;
     }
 })
-closeBtn.addEventListener("click" , function(e){
+closeBtn.addEventListener("click", function (e) {
     offCanvas.classList.remove("open");
     isclose = true;
 })
@@ -22,47 +22,47 @@ closeBtn.addEventListener("click" , function(e){
 let selectInput = document.querySelector(".offcanvas select");
 let question = document.querySelector(".question");
 let submitBtn = document.querySelector(".sub")
-let allLis =Array.from(document.querySelectorAll(".bullets ul li"));
+let allLis = Array.from(document.querySelectorAll(".bullets ul li"));
 let topic = document.querySelector(".top");
 let count = document.querySelector(".count");
 let allLisOffCanvas = document.querySelectorAll(".offcanvas ul li");
 let grade = 0;
 
-function afterFetching(){
+function afterFetching() {
     grade = 0;
-    async function fethcingApi(){
-        let response = await fetch(`json/${selectInput.value}.json`);
+    async function fethcingApi() {
+        let response = await fetch(`json/${selectInput.value.toLowerCase()}.json`);
         let data = await response.json();
         return data;
     }
     fethcingApi().then((data) => {
         topic.innerHTML = selectInput.value;
         let arr = [];
-        for(let i = 0 ; i< 10 ; i++){
+        for (let i = 0; i < 10; i++) {
             let randomNumber = Math.floor(Math.random() * data.length);
             arr.push(data[randomNumber]);
-            data.splice(randomNumber , 1);
+            data.splice(randomNumber, 1);
         }
         return arr;
     }).then((data) => {
         getquestion(data);
         return data;
     }).then((data) => {
-        submitBtn.addEventListener("click" , function(e){
-            if(data.length == 1){
+        submitBtn.addEventListener("click", function (e) {
+            if (data.length == 1) {
                 getResult();
             }
-            else{
-                data.splice(0,1);
+            else {
+                data.splice(0, 1);
                 getquestion(data);
-                allLis.forEach((li , i) => {
-                    activeLi(data , li);
+                allLis.forEach((li, i) => {
+                    activeLi(data, li);
                 })
             }
         })
     })
 }
-function getquestion(data){
+function getquestion(data) {
     count.innerHTML = data.length;
     question.innerHTML = `
         <h2>${data[0].Question}</h2>
@@ -89,29 +89,29 @@ function getquestion(data){
         label.style.color = localStorage.getItem("color");
     })
     allLisOffCanvas.forEach((li) => {
-        li.addEventListener("click" , function(e){
+        li.addEventListener("click", function (e) {
             Array.from(document.querySelectorAll("label")).forEach((label) => {
                 label.style.color = localStorage.getItem("color");
             })
         })
     })
-    submitBtn.addEventListener("click" , function(){
-        checkAnswer(document.querySelectorAll("input") ,document.querySelectorAll("label") );
+    submitBtn.addEventListener("click", function () {
+        checkAnswer(document.querySelectorAll("input"), document.querySelectorAll("label"));
     });
 }
-function getDataFromLocalStorage(){
+function getDataFromLocalStorage() {
     selectInput.value = localStorage.getItem("quiz");
 }
-function saveToLocalStorage(){
-    localStorage.setItem("quiz" , selectInput.value);
+function saveToLocalStorage() {
+    localStorage.setItem("quiz", selectInput.value);
 }
-function getResult(){
+function getResult() {
     question.innerHTML = `
         <h2> Congratz You Finish Quiz </h2>
         <p>Grade <span class="grade">${grade} / 100</span></p>
     `;
     allLisOffCanvas.forEach((li) => {
-        li.addEventListener("click" , function(e){
+        li.addEventListener("click", function (e) {
             document.querySelector(".grade").style.color = localStorage.getItem("color");
         });
     });
@@ -119,8 +119,8 @@ function getResult(){
 }
 
 
-function saveColorToLocalStorage(li){
-    localStorage.setItem("color" , li.getAttribute("data-color"));
+function saveColorToLocalStorage(li) {
+    localStorage.setItem("color", li.getAttribute("data-color"));
     let chosenColor = localStorage.getItem("color");
     topic.style.color = chosenColor;
     count.style.color = chosenColor;
@@ -131,7 +131,7 @@ function saveColorToLocalStorage(li){
     })
 
 }
-function getColorFromLocalStorage(li){
+function getColorFromLocalStorage(li) {
     let chosenColor = localStorage.getItem("color");
     topic.style.color = chosenColor;
     count.style.color = chosenColor;
@@ -143,8 +143,8 @@ function getColorFromLocalStorage(li){
 }
 
 
-allLisOffCanvas.forEach((li , i) => {
-    li.addEventListener("click" , function(e){
+allLisOffCanvas.forEach((li, i) => {
+    li.addEventListener("click", function (e) {
         allLisOffCanvas.forEach((li) => {
             li.classList.remove("active");
         })
@@ -152,30 +152,29 @@ allLisOffCanvas.forEach((li , i) => {
         saveColorToLocalStorage(li);
     })
 })
-window.addEventListener("load" , getColorFromLocalStorage);
+window.addEventListener("load", getColorFromLocalStorage);
 
-function checkAnswer(radios , labels){
-    radios.forEach((radio , i) => {
-        if(radio.checked){
-            if(radio.value == labels[i].innerHTML){
+function checkAnswer(radios, labels) {
+    radios.forEach((radio, i) => {
+        if (radio.checked) {
+            if (radio.value == labels[i].innerHTML) {
                 grade += 10;
             }
         }
     })
 }
-function activeLi(data , li){
-    if(li.getAttribute("data-index") == (11 - data.length)){
-        allLis.forEach((li , i) => {
+function activeLi(data, li) {
+    if (li.getAttribute("data-index") == (11 - data.length)) {
+        allLis.forEach((li, i) => {
             li.classList.remove("active");
         })
         li.classList.add("active");
     }
 }
-selectInput.addEventListener("blur" , afterFetching);
-selectInput.addEventListener("blur" , saveToLocalStorage);
-window.addEventListener("load" , afterFetching);
-window.addEventListener("load" , getDataFromLocalStorage);
-window.addEventListener("load" , function(){
-    selectInput.value = "HTML";
-    topic.innerHTML = selectInput.value;
+selectInput.addEventListener("blur", afterFetching);
+selectInput.addEventListener("blur", saveToLocalStorage);
+window.addEventListener("load", afterFetching);
+window.addEventListener("load", getDataFromLocalStorage);
+window.addEventListener("load", function (e) {
+    selectInput.children[0].selected = true;
 });
