@@ -17,11 +17,11 @@
     },
     {
         "Question": "How do you create a row in Bootstrap?",
-        "answer_1": "<div class=\"row\">",
-        "answer_2": "<div class=\"container\">",
-        "answer_3": "<div class=\"col\">",
-        "answer_4": "<div class=\"grid\">",
-        "right-answer": "<div class=\"row\">"
+        "answer_1": "div class=\"row\"",
+        "answer_2": "div class=\"container\"",
+        "answer_3": "div class=\"col\"",
+        "answer_4": "div class=\"grid\"",
+        "right-answer": "div class=\"row\""
     },
     {
         "Question": "Which class makes text bold in Bootstrap?",

@@ -80,7 +80,7 @@
         "right-answer": "background-color"
     },
     {
-        "Question": "What is the default display value of a <div> element?",
+        "Question": "What is the default display value of a div element?",
         "answer_1": "inline",
         "answer_2": "block",
         "answer_3": "inline-block",
@@ -112,7 +112,7 @@
         "right-answer": "opacity"
     },
     {
-        "Question": "How do you select all <p> elements inside a <div>?",
+        "Question": "How do you select all p elements inside a div?",
         "answer_1": "div p",
         "answer_2": "div > p",
         "answer_3": ".div p",
