@@ -56,12 +56,7 @@ function afterFetching(){
                 data.splice(0,1);
                 getquestion(data);
                 allLis.forEach((li , i) => {
-                    if(li.getAttribute("data-index") == (11 - data.length)){
-                        allLis.forEach((li , i) => {
-                            li.classList.remove("active");
-                        })
-                        li.classList.add("active");
-                    }
+                    activeLi(data , li);
                 })
             }
         })
@@ -71,7 +66,6 @@ function afterFetching(){
 }
 function getquestion(data){
     count.innerHTML = data.length;
-    question.innerHTML = "";
     question.innerHTML = `
         <h2>${data[0].Question}</h2>
         <div class="radios">
@@ -104,7 +98,7 @@ function getquestion(data){
         })
     })
     submitBtn.addEventListener("click" , function(){
-        checkAnswer(data);
+        checkAnswer(document.querySelectorAll("input") ,document.querySelectorAll("label") );
     });
 }
 function getDataFromLocalStorage(){
@@ -116,7 +110,7 @@ function saveToLocalStorage(){
 function getResult(){
     question.innerHTML = `
         <h2> Congratz You Finish Quiz </h2>
-        <p>Grade <span class="grade">${grade}</span></p>
+        <p>Grade <span class="grade">${grade} / 100</span></p>
     `;
     allLisOffCanvas.forEach((li) => {
         li.addEventListener("click" , function(e){
@@ -126,10 +120,6 @@ function getResult(){
     document.querySelector(".grade").style.color = localStorage.getItem("color");
 }
 
-selectInput.addEventListener("click" , afterFetching);
-selectInput.addEventListener("click" , saveToLocalStorage);
-window.addEventListener("load" , afterFetching);
-window.addEventListener("load" , getDataFromLocalStorage);
 
 function saveColorToLocalStorage(li){
     localStorage.setItem("color" , li.getAttribute("data-color"));
@@ -166,11 +156,28 @@ allLisOffCanvas.forEach((li , i) => {
 })
 window.addEventListener("load" , getColorFromLocalStorage);
 
-function checkAnswer(data){
-    let rightAnswer = document.querySelector("input[type='radio']:checked");
-    if(rightAnswer != null){
-        if(rightAnswer.value == data[0]["right-answer"]){
-            grade += 10;
+function checkAnswer(radios , labels){
+    radios.forEach((radio , i) => {
+        if(radio.checked){
+            if(radio.value == labels[i].innerHTML){
+                grade += 10;
+            }
         }
+    })
+}
+function activeLi(data , li){
+    if(li.getAttribute("data-index") == (11 - data.length)){
+        allLis.forEach((li , i) => {
+            li.classList.remove("active");
+        })
+        li.classList.add("active");
     }
 }
+selectInput.addEventListener("blur" , afterFetching);
+selectInput.addEventListener("blur" , saveToLocalStorage);
+window.addEventListener("load" , afterFetching);
+window.addEventListener("load" , getDataFromLocalStorage);
+window.addEventListener("load" , function(){
+    selectInput.value = "HTML";
+    topic.innerHTML = selectInput.value;
+});

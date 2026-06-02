@@ -37,7 +37,7 @@
         "answer_2":"// Comment",
         "answer_3":"/* Comment */",
         "answer_4":"## Comment",
-        "right-answer":"<!-- Comment -->"
+        "right-answer":"!-- Comment --"
     },
     {
         "Question":"Which tag is used to display an image?",
@@ -56,12 +56,12 @@
         "right-answer":"href"
     },
     {
-        "Question":"Which tag is used to create an ordered list?",
+        "Question":"Which tag is used to create an Unordered list?",
         "answer_1":"ul",
         "answer_2":"ol",
         "answer_3":"li",
         "answer_4":"list",
-        "right-answer":"ol"
+        "right-answer":"ul"
     },
     {
         "Question":"Which tag is used to create a table row?",
