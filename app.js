@@ -171,8 +171,19 @@ function activeLi(data, li) {
         li.classList.add("active");
     }
 }
+function resetBullets(){
+    allLis.forEach((li) => {
+        if(li.getAttribute("data-index") == 1){
+            allLis.forEach((li) => {
+                li.classList.remove("active");
+            })
+            li.classList.add("active");
+        }
+    })
+}
 selectInput.addEventListener("blur", afterFetching);
 selectInput.addEventListener("blur", saveToLocalStorage);
+selectInput.addEventListener("blur", resetBullets);
 window.addEventListener("load", afterFetching);
 window.addEventListener("load", getDataFromLocalStorage);
 window.addEventListener("load", function (e) {
