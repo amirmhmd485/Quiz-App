@@ -31,7 +31,7 @@ let grade = 0;
 function afterFetching(){
     grade = 0;
     async function fethcingApi(){
-        let response = await fetch(`json/${localStorage.getItem("quiz")}.json`);
+        let response = await fetch(`json/${selectInput.value}.json`);
         let data = await response.json();
         return data;
     }
