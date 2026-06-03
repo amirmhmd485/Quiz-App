@@ -51,6 +51,7 @@ function afterFetching() {
         submitBtn.addEventListener("click", function (e) {
             if (data.length == 1) {
                 getResult();
+                count.innerHTML = 0;
             }
             else {
                 data.splice(0, 1);
@@ -189,3 +190,5 @@ window.addEventListener("load", getDataFromLocalStorage);
 window.addEventListener("load", function (e) {
     selectInput.children[0].selected = true;
 });
+
+
