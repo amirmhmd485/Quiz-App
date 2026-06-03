@@ -26,6 +26,7 @@ let allLis = Array.from(document.querySelectorAll(".bullets ul li"));
 let topic = document.querySelector(".top");
 let count = document.querySelector(".count");
 let allLisOffCanvas = document.querySelectorAll(".offcanvas ul li");
+let allp = document.querySelectorAll(".info p");
 let grade = 0;
 
 function afterFetching() {
@@ -130,7 +131,9 @@ function saveColorToLocalStorage(li) {
     allLis.forEach((l) => {
         l.style.backgroundColor = chosenColor;
     })
-
+    allp.forEach((p) => {
+        p.style.color = chosenColor;
+    })
 }
 function getColorFromLocalStorage(li) {
     let chosenColor = localStorage.getItem("color");
@@ -140,6 +143,9 @@ function getColorFromLocalStorage(li) {
     submitBtn.style.borderColor = chosenColor;
     allLis.forEach((l) => {
         l.style.backgroundColor = chosenColor;
+    })
+    allp.forEach((p) => {
+        p.style.color = chosenColor;
     })
 }
 
@@ -190,5 +196,3 @@ window.addEventListener("load", getDataFromLocalStorage);
 window.addEventListener("load", function (e) {
     selectInput.children[0].selected = true;
 });
-
-

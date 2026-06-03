@@ -131,6 +131,17 @@ body{
             }
         }
     }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        p{
+            line-height: 1.6;
+            font-size: 20px;
+            color: var(--main-color);
+            text-align: center;
+        }
+    }
     button.close{
         width:200px;
         padding: 10px;
