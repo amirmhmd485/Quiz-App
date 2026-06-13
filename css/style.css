@@ -16,17 +16,17 @@
     --font5-color:royalblue;
 }
 body{
-    height: 100vh;
     position: relative;
     background-color: var(--darked-Color);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
     gap: 40px;
     align-items: center;
-    padding: 5px;
-    @media (max-width:368px) {
-        height: fit-content;
+    padding: 10px;
+    @media (max-width:768px) {
+        height: auto;
     }
 }
 .offcanvas{
@@ -236,6 +236,9 @@ body{
             font-weight: bold;
             line-height: 1;
             text-align: center;
+            @media (max-width:768px) {
+                font-size: 20px;
+            }
         }
         .radios{
             display: flex;
