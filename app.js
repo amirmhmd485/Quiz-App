@@ -2,6 +2,8 @@
 let offCanvas = document.querySelector(".offcanvas");
 let settingIcon = document.querySelector(".offcanvas .icon")
 let closeBtn = document.querySelector(".close")
+let startQuizBtn = document.querySelector(".start-quiz");
+let timer = document.querySelector(".timer .time")
 let isclose = true;
 
 settingIcon.addEventListener('click', function (e) {
@@ -50,19 +52,32 @@ function afterFetching() {
         return data;
     }).then((data) => {
         submitBtn.addEventListener("click", function (e) {
+            clearInterval(counter);
             if (data.length == 1) {
                 getResult();
                 count.innerHTML = 0;
+                timer.innerHTML = "0";
             }
             else {
                 data.splice(0, 1);
                 getquestion(data);
+                timer.innerHTML = "5";
                 allLis.forEach((li, i) => {
                     activeLi(data, li);
                 })
+                startTimer();
             }
         })
     })
+}
+function startTimer(){
+    counter = setInterval(() => {
+        if(timer.innerHTML == 0){
+            clearInterval(counter);
+            submitBtn.click();
+        }
+        timer.innerHTML--;
+    } , 1000)
 }
 function getquestion(data) {
     count.innerHTML = data.length;
@@ -111,13 +126,22 @@ function getResult() {
     question.innerHTML = `
         <h2> Congratz You Finish Quiz </h2>
         <p>Grade <span class="grade">${grade} / 100</span></p>
+        <button class = "start-quiz" >Start Quiz</button>
     `;
     allLisOffCanvas.forEach((li) => {
         li.addEventListener("click", function (e) {
             document.querySelector(".grade").style.color = localStorage.getItem("color");
+            document.querySelector(".start-quiz").style.color = localStorage.getItem("color");
+            document.querySelector(".start-quiz").style.borderColor = localStorage.getItem("color");
         });
     });
     document.querySelector(".grade").style.color = localStorage.getItem("color");
+    document.querySelector(".start-quiz").style.color = localStorage.getItem("color");
+    document.querySelector(".start-quiz").style.borderColor = localStorage.getItem("color");
+    document.querySelector(".start-quiz").addEventListener("click" , function(e){
+        timer.innerHTML = "5";
+        startTimer();
+    })
 }
 
 
@@ -128,6 +152,9 @@ function saveColorToLocalStorage(li) {
     count.style.color = chosenColor;
     submitBtn.style.color = chosenColor;
     submitBtn.style.borderColor = chosenColor;
+    startQuizBtn.style.color = chosenColor;
+    startQuizBtn.style.borderColor = chosenColor;
+    timer.style.color = chosenColor;
     allLis.forEach((l) => {
         l.style.backgroundColor = chosenColor;
     })
@@ -135,12 +162,16 @@ function saveColorToLocalStorage(li) {
         p.style.color = chosenColor;
     })
 }
+
 function getColorFromLocalStorage(li) {
     let chosenColor = localStorage.getItem("color");
     topic.style.color = chosenColor;
     count.style.color = chosenColor;
     submitBtn.style.color = chosenColor;
     submitBtn.style.borderColor = chosenColor;
+    startQuizBtn.style.color = chosenColor;
+    startQuizBtn.style.borderColor = chosenColor;
+    timer.style.color = chosenColor;
     allLis.forEach((l) => {
         l.style.backgroundColor = chosenColor;
     })
@@ -188,11 +219,28 @@ function resetBullets(){
         }
     })
 }
-selectInput.addEventListener("blur", afterFetching);
+
+
 selectInput.addEventListener("blur", saveToLocalStorage);
-selectInput.addEventListener("blur", resetBullets);
-window.addEventListener("load", afterFetching);
 window.addEventListener("load", getDataFromLocalStorage);
+
 window.addEventListener("load", function (e) {
     selectInput.children[0].selected = true;
 });
+
+// start quiz here
+function startAgian(e){
+    if(e.target.classList.contains("start-quiz")){
+        afterFetching();
+        resetBullets();
+    }
+}
+function deleteBtn(e){
+    e.target.remove();
+}
+startQuizBtn.addEventListener("click" , afterFetching);
+startQuizBtn.addEventListener("click" , resetBullets);
+startQuizBtn.addEventListener("click" , deleteBtn);
+startQuizBtn.addEventListener("click" , startTimer);
+question.addEventListener("click" , startAgian);
+// end quiz here
